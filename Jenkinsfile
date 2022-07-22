@@ -5,6 +5,12 @@ pipeline
 		label 'maven-slave'
 	}
 	
+	tools
+	{
+		maven 'my_maven'
+		jdk 'my_jdk'
+	}
+	
 	stages
 	{
 		stage('Checkout Code')
